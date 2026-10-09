@@ -1,0 +1,53 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: trustthread-db
+    environment:
+      POSTGRES_DB: trustthread
+      POSTGRES_USER: trustthread
+      POSTGRES_PASSWORD: trustthread
+    ports:
+      - "5432:5432"
+    volumes:
+      - trustthread_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U trustthread -d trustthread"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    container_name: trustthread-backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://trustthread:trustthread@db:5432/trustthread
+      JWT_SECRET: hackathon-demo-secret-change-me
+      CORS_ORIGINS: http://localhost:5173
+      APP_ENV: demo
+      LLM_MODE: mock
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+    command: sh -c "python -m app.seed && uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+
+  frontend:
+    image: node:20-alpine
+    container_name: trustthread-frontend
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_URL: http://localhost:8000/api
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    depends_on:
+      - backend
+
+volumes:
+  trustthread_pg:
