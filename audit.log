@@ -1,0 +1,14 @@
+{"timestamp": "2026-10-09T10:02:39.433724+00:00", "user_id": "U101", "resource": "general", "decision": "ALLOW"}
+{"timestamp": "2026-10-09T10:02:43.295342+00:00", "user_id": "U101", "resource": "general", "decision": "ALLOW"}
+{"timestamp": "2026-10-09T10:04:52.280109+00:00", "user_id": "U101", "resource": "general", "decision": "ALLOW"}
+{"timestamp": "2026-10-09T10:06:15.736174+00:00", "user_id": "U101", "resource": "salary_sheet", "decision": "BLOCK"}
+{"timestamp": "2026-10-09T10:06:45.240586+00:00", "user_id": "U101", "resource": "general", "decision": "BLOCK"}
+{"timestamp": "2026-10-09T10:06:49.357931+00:00", "user_id": "U101", "resource": "general", "decision": "BLOCK"}
+{"timestamp": "2026-10-09T10:06:56.646563+00:00", "user_id": "U101", "resource": "general", "decision": "BLOCK"}
+{"timestamp": "2026-10-09T10:07:18.091576+00:00", "user_id": "U101", "resource": "general", "decision": "BLOCK"}
+{"timestamp": "2026-10-09T10:07:39.618879+00:00", "user_id": "U999", "resource": "general", "decision": "BLOCK"}
+{"timestamp": "2026-10-09T10:07:44.518221+00:00", "user_id": "U999", "resource": "general", "decision": "BLOCK"}
+{"timestamp": "2026-10-09T18:56:39.170417+00:00", "user_id": "string", "resource": "general", "decision": "BLOCK"}
+{"timestamp": "2026-10-09T19:16:02.811609+00:00", "user_id": "string", "resource": "general", "decision": "BLOCK"}
+{"timestamp": "2026-10-09T20:24:54.972299+00:00", "user_id": "string", "resource": "general", "decision": "BLOCK"}
+{"timestamp": "2026-10-09T20:25:58.288131+00:00", "user_id": "string", "resource": "general", "decision": "BLOCK"}
