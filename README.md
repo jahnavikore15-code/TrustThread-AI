@@ -61,7 +61,7 @@ docker compose up --build
 
 Then open:
 
-- Frontend: http://localhost:5173
+- Frontend: http://localhost:5176
 - Backend API: http://localhost:8000
 - Swagger docs: http://localhost:8000/docs
 
