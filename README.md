@@ -416,9 +416,9 @@ The frontend and backend can be deployed separately.
 
 Possible deployment components include:
 
-- **Frontend:** Vercel or another platform supporting React and Vite
-- **Backend:** A Python hosting platform that supports FastAPI and Uvicorn
-- **Database:** Supabase PostgreSQL
+- **Frontend:**http://localhost:5173/
+- **Backend:** http://127.0.0.1:8000
+- **Database:**https://supabase.com/dashboard/project/ajbubgbbnbwnqyxymejp
 
 Configure environment variables in the appropriate hosting platforms. Do not expose the database connection string or JWT secret in frontend code.
 
@@ -457,10 +457,9 @@ Potential enhancements include:
 
 **TrustThread AI**
 
-Developer: Add your name, academic details, and GitHub profile here.
+JAHNAVI KORE
+BTECH AIML STUDENT
+Github link:https://github.com/jahnavikore15-code
 
-## 📄 License
-
-Choose and add an appropriate open-source license if you intend to permit others to reuse the project.
 
 
