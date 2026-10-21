@@ -6,12 +6,6 @@ TrustThread AI is a security-focused application designed to evaluate user ident
 
 The project combines a React-based frontend, a Python FastAPI backend, and PostgreSQL hosted through Supabase to demonstrate an identity-aware security workflow.
 
-## 🚀 Project Demo
-
-- **Live Demo:** Add your deployed frontend URL when available.
-- **GitHub Repository:** Add your repository URL after publishing.
-- **API Documentation:** Available locally at `http://127.0.0.1:8000/docs` while the backend is running.
-
 ## 📌 Problem Statement
 
 Modern applications need more than a basic login mechanism to protect sensitive resources. They must consider who is making a request, whether that user's identity is verified, what permissions they have, and whether the requested action presents a security risk.
